@@ -342,6 +342,13 @@ class VitsModel(pl.LightningModule):
             type=int,
             help="Exclude utterances with phoneme id lists longer than this",
         )
+        # Add this line:
+        parser.add_argument(
+            "--num-workers",
+            type=int,
+            default=1, # Keep the default from the __init__ if desired
+            help="Number of workers for data loading"
+        )
         #
         parser.add_argument("--hidden-channels", type=int, default=192)
         parser.add_argument("--inter-channels", type=int, default=192)

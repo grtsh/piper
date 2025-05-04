@@ -20,3 +20,10 @@ htmlcov
 
 .venv/
 lightning_logs/
+
+src/python/venv
+Eva_K
+Eva_K_*
+*.tar.gz
+*.ckpt
+venv
